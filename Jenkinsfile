@@ -30,7 +30,7 @@ Build Successful
 Project: deploy to netlify
 Build Number: ${env.BUILD_NUMBER}
 View Build Log: ${env.BUILD_URL}console
-view webiste: https://vishwakrma-furniture.netlify.app
+view webiste: https://vishwakrma-furnituresheopur.netlify.app/
 """
         }
 
@@ -43,7 +43,7 @@ Build Failed
 Project: deploy to netlify
 Build Number: ${env.BUILD_NUMBER}
 View Build Log: ${env.BUILD_URL}console
-view webiste: https://vishwakrma-furniture.netlify.app
+view webiste: https://vishwakrma-furnituresheopur.netlify.app/
 """
         }
     }
