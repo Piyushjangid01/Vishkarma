@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishwakarma Furniture | Premium Aluminium & Glass Solutions</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* === Global Styles === */
+      :root {
+        --primary: #c29967;
+        --primary-dark: #684821;
+        --secondary: #1e293b;
+        --light: #f8fafc;
+        --dark: #0f172a;
+        --gray: #64748b;
+        --light-gray: #e2e8f0;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+        background-color: #ffffff;
+        color: var(--dark);
+        line-height: 1.6;
+        scroll-behavior: smooth;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      section {
+        padding: 80px 0;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      h1 {
+        font-size: 3.5rem;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        position: relative;
+        display: inline-block;
+      }
+
+      h2:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 60px;
+        height: 4px;
+        background: var(--primary);
+        border-radius: 2px;
+      }
+
+      p {
+        color: var(--gray);
+        margin-bottom: 1rem;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 28px;
+        background-color: var(--primary);
+        color: white;
+        font-weight: 600;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .btn:hover {
+        background-color: var(--primary-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(249, 115, 22, 0.2);
+      }
+
+      .btn-outline {
+        background: transparent;
+        border: 2px solid var(--primary);
+        color: var(--primary);
+      }
+
+      .btn-outline:hover {
+        background: var(--primary);
+        color: white;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .text-center h2:after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      /* === Header & Navigation === */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: all 0.3s ease;
+        background-color: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+      }
+
+      header.scrolled {
+        background-color: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: var(--dark);
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        text-decoration: none;
+      }
+
+      .logo img {
+        backdrop-filter: blur(20px);
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+      }
+
+      .nav-links a {
+        color: var(--dark);
+        font-weight: 600;
+        position: relative;
+        padding: 5px 0;
+      }
+
+      .nav-links a:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--primary);
+        transition: width 0.3s ease;
+      }
+
+      .nav-links a:hover:after {
+        width: 100%;
+      }
+
+      .nav-links a.active {
+        color: var(--primary);
+      }
+      .links {
+        text-decoration: none;
+      }
+      .mobile-menu-btn {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: var(--dark);
+        cursor: pointer;
+      }
+
+      /* === Hero Section === */
+      .hero {
+        height: 100vh;
+        min-height: 700px;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          url("https://images.unsplash.com/photo-1600585152220-90363fe7e115?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding-top: 80px;
+      }
+
+      .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .hero h1 {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        color: white;
+        animation: fadeInUp 1s ease;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 30px;
+        animation: fadeInUp 1.2s ease;
+      }
+
+      .hero-btns {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        animation: fadeInUp 1.4s ease;
+      }
+
+      .hero .btn {
+        animation: none;
+      }
+
+      /* === About Section === */
+      .about {
+        background-color: var(--light);
+      }
+
+      .about-content {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+      }
+
+      .about-img {
+        flex: 1;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s ease;
+      }
+
+      .about-img:hover img {
+        transform: scale(1.05);
+      }
+
+      .about-text {
+        flex: 1;
+      }
+
+      .about-text h2 {
+        margin-bottom: 20px;
+      }
+
+      .about-features {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .feature-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+      }
+
+      .feature-icon {
+        width: 50px;
+        height: 50px;
+        background-color: var(--primary);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+      }
+
+      /* === Services Section === */
+      .services {
+        background-color: white;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+      }
+
+      .service-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .service-img {
+        height: 220px;
+        overflow: hidden;
+      }
+
+      .service-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .service-card:hover .service-img img {
+        transform: scale(1.1);
+      }
+
+      .service-content {
+        padding: 25px;
+      }
+
+      .service-content h3 {
+        margin-bottom: 15px;
+        font-size: 1.4rem;
+      }
+
+      /* === Testimonials Section === */
+      .testimonials {
+        background-color: var(--light);
+      }
+
+      .testimonial-slider {
+        margin-top: 50px;
+        position: relative;
+      }
+
+      .testimonial-card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        margin: 0 15px;
+      }
+
+      .testimonial-text {
+        font-style: italic;
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .testimonial-text:before {
+        content: '"';
+        font-size: 4rem;
+        color: var(--primary);
+        opacity: 0.2;
+        position: absolute;
+        top: -20px;
+        left: -15px;
+        line-height: 1;
+      }
+
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .author-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .author-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .author-info h4 {
+        margin-bottom: 5px;
+      }
+
+      .author-info p {
+        color: #0e1622;
+        font-size: 0.9rem;
+      }
+
+      /* === Team Section === */
+      .team {
+        background-color: white;
+      }
+
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+      }
+
+      .team-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+
+      .team-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Avatar Image Styles */
+      .avatar-container {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+        border-radius: 50%;
+        padding: 5px;
+        background: linear-gradient(135deg, #5f316c 0%, #fbbf24 100%);
+        box-shadow: 0 8px 32px rgba(249, 115, 22, 0.3);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .avatar-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid white;
+        transition: all 0.5s ease;
+        filter: brightness(1.05) contrast(1.1);
+        transform: scale(0.95);
+      }
+
+      .team-card:hover .avatar-img {
+        transform: scale(1);
+        filter: brightness(1.1) contrast(1.2);
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.8);
+      }
+
+      /* Team Card Enhancements */
+      .team-img {
+        position: relative;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to bottom, #f8fafc 0%, #e2e8f0 100%);
+        overflow: visible;
+      }
+
+      .team-card:hover .team-social {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .team-info {
+        padding: 25px 15px;
+        text-align: center;
+        background: white;
+      }
+
+      .team-info h3 {
+        margin-bottom: 8px;
+        color: #1e293b;
+        font-size: 1.3rem;
+      }
+
+      .team-info p {
+        color: #64748b;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+      }
+
+      /* === Contact Section === */
+      .contact {
+        background: linear-gradient(
+            rgba(15, 23, 42, 0.9),
+            rgba(15, 23, 42, 0.9)
+          ),
+          url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+        background-size: cover;
+        background-position: center;
+        color: white;
+      }
+
+      .contact h2 {
+        color: white;
+      }
+
+      .contact h2:after {
+        background: white;
+      }
+
+      .contact p {
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      .contact-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 50px;
+        margin-top: 50px;
+      }
+
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+      }
+
+      .contact-icon {
+        width: 50px;
+        height: 50px;
+        background: var(--primary);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        flex-shrink: 0;
+      }
+
+      .contact-text h3 {
+        margin-bottom: 5px;
+      }
+
+      .contact-text a {
+        color: rgba(255, 255, 255, 0.8);
+        transition: color 0.3s ease;
+      }
+
+      .contact-text a:hover {
+        color: var(--primary);
+      }
+
+      .contact-form {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: var(--dark);
+      }
+
+      .form-control {
+        width: 100%;
+        padding: 12px 15px;
+        border: 1px solid var(--light-gray);
+        border-radius: 5px;
+        font-family: inherit;
+        transition: all 0.3s ease;
+      }
+
+      .form-control:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+      }
+
+      textarea.form-control {
+        min-height: 150px;
+        resize: vertical;
+      }
+
+      /* === Map Section === */
+      .map {
+        padding: 0;
+        height: 500px;
+      }
+
+      .map iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      /* === Footer === */
+      footer {
+        background-color: var(--secondary);
+        color: white;
+        padding: 40px 0 10px;
+      }
+
+      .footer-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+      }
+
+      .footer-col h3 {
+        margin-bottom: 25px;
+        font-size: 1.3rem;
+        position: relative;
+        padding-bottom: 10px;
+      }
+
+      .footer-col h3:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 40px;
+        height: 2px;
+        background: var(--primary);
+      }
+
+      .footer-about p {
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 20px;
+      }
+
+      .footer-links li {
+        margin-bottom: 12px;
+        list-style: none;
+      }
+
+      .footer-links a {
+        color: rgba(255, 255, 255, 0.7);
+        transition: all 0.3s ease;
+        display: inline-block;
+      }
+
+      .footer-links a:hover {
+        color: var(--primary);
+        transform: translateX(5px);
+      }
+
+      .footer-contact p {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 15px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .footer-contact i {
+        color: var(--primary);
+        margin-top: 4px;
+      }
+
+      .footer-newsletter p {
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 20px;
+      }
+
+      .newsletter-form {
+        display: flex;
+        margin-bottom: 20px;
+      }
+
+      .newsletter-form input {
+        flex: 1;
+        padding: 12px 15px;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        font-family: inherit;
+      }
+
+      .newsletter-form button {
+        padding: 0 20px;
+        background: var(--primary);
+        color: white;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .newsletter-form button:hover {
+        background: var(--primary-dark);
+      }
+
+      .social-links {
+        display: flex;
+        gap: 15px;
+      }
+
+      .social-links a {
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+      }
+
+      .social-links a:hover {
+        background: var(--primary);
+        transform: translateY(-5px);
+      }
+
+      .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.9rem;
+      }
+
+      /* === Animations === */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* === Responsive Styles === */
+      @media (max-width: 992px) {
+        h1 {
+          font-size: 3rem;
+        }
+
+        h2 {
+          font-size: 2.2rem;
+        }
+
+        .about-content {
+          flex-direction: column;
+        }
+
+        .about-img {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .navbar {
+          padding: 15px 0;
+        }
+
+        .nav-links {
+          position: fixed;
+          top: 80px;
+          left: -100%;
+          width: 100%;
+          height: calc(100vh - 80px);
+          background: white;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 30px;
+          transition: all 0.5s ease;
+          z-index: 999;
+        }
+
+        .nav-links.active {
+          left: 0;
+        }
+
+        .mobile-menu-btn {
+          display: block;
+        }
+
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero p {
+          font-size: 1rem;
+        }
+
+        .hero-btns {
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        section {
+          padding: 60px 0;
+        }
+      }
+
+      @media (max-width: 576px) {
+        h1 {
+          font-size: 2.2rem;
+        }
+
+        h2 {
+          font-size: 1.8rem;
+        }
+
+        .btn {
+          padding: 10px 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="logo">
+            <img
+              src="./pictures/Logo.jpeg"
+              alt="logo"
+              height="50px"
+              style="border-radius: 50%; margin-right: 5px"
+            />
+            Vishwakarma Furniture
+          </a>
+
+          <ul class="nav-links">
+            <li><a href="#home" class="active links">Home</a></li>
+            <li><a href="#about" class="links">About</a></li>
+            <li><a href="#services" class="links">Services</a></li>
+            <li><a href="#testimonials" class="links">Testimonials</a></li>
+            <li><a href="#team" class="links">Team</a></li>
+            <li><a href="#contact" class="links">Contact</a></li>
+          </ul>
+
+          <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Premium Aluminium & Glass Solutions</h1>
+          <p>
+            Expert craftsmanship meets modern design in our premium aluminium
+            and glass furniture, doors, and windows for homes and businesses.
+          </p>
+          <div class="hero-btns">
+            <a href="#contact" class="btn">Get a Quote</a>
+            <a href="#services" class="btn btn-outline">Our Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-img">
+            <img
+              src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="Aluminium Glass Work"
+            />
+          </div>
+          <div class="about-text">
+            <h2>About Our Expertise</h2>
+            <p>
+              Vishwakarma Furniture specializes in modern aluminium and glass
+              solutions, bringing over 20 years of experience to every project.
+              We combine traditional caftsmanship with contemporary designs to
+              create durable and beautiful products.
+            </p>
+            <p>
+              Our team of skilled artisans works closely with clients to deliver
+              customized solutions that perfectly match their vision and
+              requirements.
+            </p>
+
+            <div class="about-features">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-medal"></i>
+                </div>
+                <div>
+                  <h3>Premium Quality</h3>
+                  <p>We use only the finest materials and techniques</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div>
+                  <h3>Timely Delivery</h3>
+                  <p>Completed projects on schedule, every time</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <div>
+                  <h3>Innovative Designs</h3>
+                  <p>Modern solutions for contemporary spaces</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-headset"></i>
+                </div>
+                <div>
+                  <h3>Customer Support</h3>
+                  <p>Dedicated assistance throughout your project</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="text-center">
+          <h2>Our Services</h2>
+          <p>
+            We offer comprehensive aluminium and glass solutions for residential
+            and commercial spaces
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-img">
+              <img
+                src="./pictures/door.jpeg"
+                alt="Aluminium Doors"
+              />
+            </div>
+            <div class="service-content">
+              <h3>Aluminium Doors</h3>
+              <p>
+                Custom-designed aluminium doors with premium finishes, available
+                in sliding, folding, and swing styles to match your
+                architectural needs.
+              </p>
+              <a
+                href="#contact"
+                class="btn"
+                style="margin-top: 15px; display: inline-block"
+                >Enquire Now</a
+              >
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-img">
+              <img
+                src="./pictures/furniture3.jpeg"
+                alt="Glass Partitions"
+              />
+            </div>
+            <div class="service-content">
+              <h3>Glass Partitions</h3>
+              <p>
+                Elegant glass partitions that create open, light-filled spaces
+                while maintaining privacy and acoustic separation where needed.
+              </p>
+              <a
+                href="#contact"
+                class="btn"
+                style="margin-top: 15px; display: inline-block"
+                >Enquire Now</a
+              >
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-img">
+              <img
+                src="./pictures/furniture1.jpeg"
+                alt="Custom Furniture"
+              />
+            </div>
+            <div class="service-content">
+              <h3>Custom Furniture</h3>
+              <p>
+                Bespoke aluminium and glass furniture pieces including tables,
+                shelves, and display units designed for modern living and
+                workspaces.
+              </p>
+              <a
+                href="#contact"
+                class="btn"
+                style="margin-top: 15px; display: inline-block"
+                >Enquire Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="text-center">
+          <h2>Client Testimonials</h2>
+          <p>
+            Hear what our satisfied customers say about our work and service
+          </p>
+        </div>
+
+        <div class="testimonial-slider">
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              <p>
+                Great service and premium quality work! The aluminium sliding
+                doors we got for our home are not just beautiful but also
+                extremely durable. The team was professional and completed the
+                work on time. Highly satisfied with their work in Sheopur.
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-img">
+                <img
+                  src="./pictures/piyush.jpeg"
+                  alt="Piyush Jangid"
+                />
+              </div>
+              <div class="author-info">
+                <h4>Piyush Jangid</h4>
+                <p>Homeowner, Sheopur</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              <p>
+                Professional and on-time delivery. The glass partitions for our
+                office have transformed our workspace, making it look more
+                modern and spacious. The team at Vishwakarma Furniture
+                understood our requirements perfectly. Highly recommend!
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-img">
+                <img
+                  src="./pictures/ram.jpeg"
+                  alt="Ram Jangid"
+                />
+              </div>
+              <div class="author-info">
+                <h4>Ram Jangid</h4>
+                <p>Business Owner, Sheopur</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-text">
+              <p>
+                Modern designs and very durable. We got our entire home done
+                with aluminium windows and doors from Vishwakarma Furniture. The
+                finishing is impeccable and the products have stood the test of
+                time. Truly modern work in Sheopur.
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-img">
+                <img
+                  src="./pictures/mohit.jpeg"
+                  alt="Mohit Jangid"
+                />
+              </div>
+              <div class="author-info">
+                <h4>Mohit Jangid</h4>
+                <p>Architect, Sheopur</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+      <div class="container">
+        <div class="text-center">
+          <h2>Meet Our Team</h2>
+          <p>
+            The skilled professionals behind Vishwakarma Furniture's success
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-img">
+              <div class="avatar-container">
+                <img
+                  src="./pictures/owner1.jpeg"
+                  alt="Mr. Vijay Jangid"
+                  class="avatar-img"
+                />
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Mr. Vijay Jangid</h3>
+              <p><i class="fas fa-phone"></i> +91-9425127417</p>
+              <p><i class="fas fa-envelope"></i> vijayjangid7417@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-img">
+              <div class="avatar-container">
+                <img
+                  src="./pictures/owner2.jpeg"
+                  alt="Mr. Ajay Jangid"
+                  class="avatar-img"
+                />
+              </div>
+            </div>
+            <div class="team-info">
+              <h3>Mr. Ajay Jangid</h3>
+              <p><i class="fas fa-phone"></i> +91-9753187652</p>
+              <p><i class="fas fa-envelope"></i> ajayjangid01@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="text-center">
+          <h2>Get In Touch</h2>
+          <p>
+            Contact us for inquiries, quotes, or to discuss your project
+            requirements
+          </p>
+        </div>
+
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Our Location</h3>
+                <p>Bypass Road, Sheopur, Madhya Pradesh 476001</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Call Us</h3>
+                <p><a href="tel:+91942512747">+91-942512747</a></p>
+                <p><a href="tel:+916261662150">+91-6261662150</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Email Us</h3>
+                <p>
+                  <a href="mailto:vijayjangid7417@gmail.com"
+                    >vijayjangid7417@gmail.com</a
+                  >
+                </p>
+                <p>
+                  <a href="mailto:ajayjangid01@gmail.com"
+                    >ajayjangid01@gmail.com</a
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-text">
+                <h3>Working Hours</h3>
+                <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+                <p>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+           <form action="https://formsubmit.co/piyushjangid0001@gmail.com" method="POST">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  class="form-control"
+                  placeholder="Enter your phone number"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service Required</label>
+                <select id="service" class="form-control" required>
+                  <option value="">Select a service</option>
+                  <option value="doors">Aluminium Doors</option>
+                  <option value="windows">Aluminium Windows</option>
+                  <option value="partitions">Glass Partitions</option>
+                  <option value="furniture">Custom Furniture</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Project Details</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  placeholder="Describe your project requirements"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn" style="width: 100%">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.204010847278!2d76.69130357473772!3d25.67315511497216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3966aafea5f33c3f%3A0xe5354d1856fd402a!2sBypass%20Rd%2C%20Sheopur%2C%20Madhya%20Pradesh%20476001!5e0!3m2!1sen!2sin!4v1722414334671!5m2!1sen!2sin"
+        loading="lazy"
+        allowfullscreen
+      >
+      </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-col">
+            <h3>Vishwakarma Furniture</h3>
+            <div class="footer-about">
+              <p>
+                Specializing in premium aluminium and glass solutions for homes
+                and businesses in Sheopur and surrounding areas.
+              </p>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/teamvishwakarmafurniture/"
+                style="text-decoration: none"
+                ><i class="fab fa-instagram" target="_blank"></i
+              ></a>
+              <a
+                href="https://api.whatsapp.com/send?phone=919131112131"
+                style="text-decoration: none"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#team">Our Team</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Services</h3>
+            <ul class="footer-links">
+              <li><a href="#">Aluminium Doors</a></li>
+              <li><a href="#">Aluminium Windows</a></li>
+              <li><a href="#">Glass Partitions</a></li>
+              <li><a href="#">Shower Enclosures</a></li>
+              <li><a href="#">Custom Furniture</a></li>
+              <li><a href="#">Commercial Solutions</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Newsletter</h3>
+            <div class="footer-newsletter">
+              <p>
+                Subscribe to our newsletter for updates on new designs and
+                special offers.
+              </p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required />
+                <button type="submit">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+              <p>
+                <i class="fas fa-phone-alt"></i> +91-9425127417 / +91-9753187652
+              </p>
+              <p><i class="fas fa-envelope"></i> vijayjangid7417@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Vishwakarma Furniture. All Rights Reserved. | Designed
+            by Piyush Jangid
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile Menu Toggle
+      const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        mobileMenuBtn.innerHTML = navLinks.classList.contains("active")
+          ? '<i class="fas fa-times"></i>'
+          : '<i class="fas fa-bars"></i>';
+      });
+
+      // Close mobile menu when clicking a link
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+          mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        });
+      });
+
+      // Header scroll effect
+      window.addEventListener("scroll", () => {
+        const header = document.getElementById("header");
+        header.classList.toggle("scrolled", window.scrollY > 50);
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Set active link based on scroll position
+      const sections = document.querySelectorAll("section");
+      const navItems = document.querySelectorAll(".nav-links a");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+
+          if (pageYOffset >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navItems.forEach((item) => {
+          item.classList.remove("active");
+          if (item.getAttribute("href") === `#${current}`) {
+            item.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
